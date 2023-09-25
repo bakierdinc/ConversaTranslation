@@ -1,0 +1,48 @@
+﻿@{
+    ViewData["Title"] = "Basic ConversaTranslationJS";
+}
+
+<div class="row" style="margin-top:40px;">
+    <div class="container">
+        <div class="card bg-light" style="height:100%;">
+            <div class="card-header">
+                Basic ConversaTranslationJS
+            </div>
+            <div class="card-body" style="max-height: 80%;overflow-y: auto;">
+                <div id="login">
+                    <div class="row">
+                        <div class="col-md-4 offset-md-4">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Nick</span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Nick" aria-label="Nick" aria-describedby="Nick" id="nick">
+                            </div>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Dil</span>
+                                </div>
+                                <select id="language" class="form-control">
+                                    <option value="tr-TR">Türkçe</option>
+                                    <option value="en-US">English</option>
+                                </select>
+                            </div>
+                            <button type="button" onclick="login();" class="form-control btn btn-success">Login</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="conversaTranslation" style="display:none;">
+                <div class="row">
+                    <div id="chatArea" class="col-md-12">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <button type="button"onclick="openOrCloseMic();" class="form-control btn btn-success">Open Or Close Mic</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
