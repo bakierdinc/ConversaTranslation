@@ -9,25 +9,25 @@
                 Basic ConversaTranslationJS
             </div>
             <div class="card-body" style="max-height: 80%;overflow-y: auto;">
-                <div id="login">
+                <div id="join">
                     <div class="row">
                         <div class="col-md-4 offset-md-4">
                             <div class="input-group mb-3">
                                 <div class="input-group-prepend">
-                                    <span class="input-group-text">Nick</span>
+                                    <span class="input-group-text">nickname</span>
                                 </div>
-                                <input type="text" class="form-control" placeholder="Nick" aria-label="Nick" aria-describedby="Nick" id="nick">
+                                <input type="text" class="form-control" placeholder="nickname" aria-label="nickname" aria-describedby="nickname" id="nickname">
                             </div>
                             <div class="input-group mb-3">
                                 <div class="input-group-prepend">
-                                    <span class="input-group-text">Dil</span>
+                                    <span class="input-group-text">language</span>
                                 </div>
                                 <select id="language" class="form-control">
-                                    <option value="tr-TR">Türkçe</option>
+                                    <option value="tr-TR">Turkish</option>
                                     <option value="en-US">English</option>
                                 </select>
                             </div>
-                            <button type="button" onclick="login();" class="form-control btn btn-success">Login</button>
+                            <button type="button" onclick="join();" class="form-control btn btn-success">join</button>
                         </div>
                     </div>
                 </div>
@@ -35,11 +35,12 @@
             <div id="conversaTranslation" style="display:none;">
                 <div class="row">
                     <div id="chatArea" class="col-md-12">
+                        <ul id="chatAreaMessages"></ul>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-3">
-                        <button type="button" onclick="openOrCloseMic();" class="form-control btn btn-success">Open Or Close Mic</button>
+                        <button type="button" onclick="speak();" class="form-control btn btn-success">Click to speak</button>
                     </div>
                 </div>
             </div>
