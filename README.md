@@ -1,3 +1,3 @@
 # ConversaTranslation
 
-Aims to communicate between people across language differences.
+It aims to overcome language differences and build communication between people.
